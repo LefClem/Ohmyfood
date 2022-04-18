@@ -7,7 +7,9 @@ body {
     margin: 0;
 }
 
-
+a {
+    text-decoration: none;
+}
 
 
 /* ----- HEADER SECTION ----*/
@@ -27,7 +29,7 @@ body {
     background: white;
 }
 
-.img-header > h3 {
+.img-header > h1 {
     font-family: 'Shrikhand', sans-serif;
     font-size: 25px;
     margin: 15px;
@@ -104,7 +106,7 @@ img {
     
 }
 
-.menu-header > h1 {
+.menu-header > h2 {
     font-family: 'Shrikhand', sans-serif;
     margin: 20px;
 }
@@ -166,6 +168,10 @@ article > h2 {
     margin-left: 20px;
 }
 
+article > h2 > span {
+    border-bottom: 5px solid #99E2D0;
+}
+
 .card {
     display: flex;
     justify-content: space-between;
@@ -213,16 +219,22 @@ article > h2 {
     transition: margin-right .5s ease-in-out;
 }
 
+.check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.7rem;
+    height: 1.7rem;
+    background: #FFF;
+    border-radius: 50%;
+}
+
 .fa-check {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background: #FFF;
     color: #99E2D0;
-    font-size: 1.3em;
+    font-size: 1rem;
 }
 
 .card:hover {
@@ -233,7 +245,7 @@ article > h2 {
     margin-right: 0;
 }
 
-.card:hover > .checkbox > .fa-check {
+.card:hover > .checkbox > .check > .fa-check {
     animation: spin .45s ease-in-out .25s;
 }
 

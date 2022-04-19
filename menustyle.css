@@ -176,6 +176,7 @@ article > h2 > span {
     display: flex;
     justify-content: space-between;
     width: 90%;
+    max-width: 480px;
     min-height: 71px;
     background-color: #fff;
     margin: 15px auto;
@@ -207,6 +208,7 @@ article > h2 > span {
     min-width: 27px;
     margin-right: 20px;
     margin-bottom: 10px;
+    font-weight: bold;
 }
 
 .checkbox {

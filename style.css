@@ -218,6 +218,7 @@ header {
     text-align: center;
     border-radius: 45px;
     width: 55%;
+    min-width: 207px;
     max-width: 248px;
     padding: 15px;
     color: white;
@@ -239,8 +240,8 @@ header {
     flex-direction: column;
 }
 
-.functionning > h1 {
-    margin: 40px 20px 15px 20px;
+.functionning > h2 {
+    margin: 40px 20px 15px 40px;
 }
 
 
@@ -258,8 +259,11 @@ header {
 
 .list:hover {
     background-color: #f5edff;
-    color: #9356DC;
     cursor: pointer;
+}
+
+.list:hover > .logo {
+    color:#9356DC;
 }
 
 .list > .logo {
@@ -282,6 +286,10 @@ header {
 }
 
 @media screen and (min-width: 992px) {
+    .functionning > h2 {
+        text-align: center;
+    }
+    
     nav {
         display: flex;
         justify-content: center;
@@ -291,7 +299,20 @@ header {
     }
 
     .list {
-        max-width: 480px;
+        max-width: 380px;
+        margin: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .functionning > nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .list {
+        max-width: 380px;
         margin: 20px;
     }
 }
@@ -312,7 +333,7 @@ header {
 }
 
 .restaurant > h1 {
-    margin: 40px 40px 15px 40px;
+    margin: 40px;
     padding-top: 40px;
 }
 
@@ -418,6 +439,10 @@ header {
         display: grid;
         place-items: center;
     }
+
+    .restaurant > h1 {
+        padding-top: 0;
+    }
     
     .restaurant-container{
         display: grid;
@@ -437,6 +462,21 @@ header {
     }
 }
 
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .restaurant-container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .restaurant-container > a {
+        display: flex;
+        justify-content: center;
+    }
+
+    .card {
+        width: 530px;
+    }
+}
 
 
 

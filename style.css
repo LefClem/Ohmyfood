@@ -285,7 +285,7 @@ header {
     background-color: #9356DC;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
     .functionning > h2 {
         text-align: center;
     }
@@ -304,18 +304,10 @@ header {
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
-    .functionning > nav {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-    
-    .list {
-        max-width: 380px;
-        margin: 20px;
-    }
-}
+
+
+
+
 
 
 
@@ -332,7 +324,7 @@ header {
     padding-bottom: 50px;
 }
 
-.restaurant > h1 {
+.restaurant > h2 {
     margin: 40px;
     padding-top: 40px;
 }
@@ -439,10 +431,6 @@ header {
         display: grid;
         place-items: center;
     }
-
-    .restaurant > h1 {
-        padding-top: 0;
-    }
     
     .restaurant-container{
         display: grid;
@@ -468,6 +456,10 @@ header {
         flex-direction: column;
     }
     
+    .restaurant > h2 {
+        text-align: center;
+    }
+
     .restaurant-container > a {
         display: flex;
         justify-content: center;

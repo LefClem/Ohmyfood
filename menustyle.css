@@ -166,10 +166,13 @@ img {
 
 article > h2 {
     margin-left: 20px;
+    margin-bottom: 30px;
+    font-weight: normal;
 }
 
 article > h2 > span {
-    border-bottom: 5px solid #99E2D0;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #99E2D0;
 }
 
 .card {
